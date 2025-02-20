@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Love Poems</title>
     <link rel="stylesheet" href="source/style.css">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 </head>
 <body>
     <div class="shelter">
@@ -12,16 +13,12 @@
     <h1>AI Love Poems</h1>
     </header>
     <main>
-        <form>
-            <input type="text" placeholder="Enter a text for love poem" required class="text-form"/>
+        <form id="textForm">
+            <input type="text" placeholder="Enter a text for love poem" required class="text-form" />
             <input type="submit" class="search"/>
         </form>
 
-        <div class="poem-text" >
-            When she first saw them, they were dazzling…
-            <br>
-            full of promise (and promises!)
-        </div>
+        <div class="poem-text" id="poem-text"></div>
     </main>
     <script src="source/app.js"></script>
     <footer>
