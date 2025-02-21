@@ -15,7 +15,7 @@ function generatePoem(event) {
   let poemInfo = document.querySelector(".text-form");
   let apiKey = "713a631324o2dtc013aaf4374b846544";
   let prompt = `Generate love poems about ${poemInfo.value}`;
-  let context = "You are a love expect who loves poems. You are to generate a 6 line love poems in basic HTML and separate lines in <br>. Do not include a title to the poem";
+  let context = "You are a love expect who loves poems. You are to generate a 6 line love poems in basic HTML and separate lines in <br>. Do not include title to the poem. Do not include the word html.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   axios.get(apiUrl).then(showPoem);
