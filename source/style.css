@@ -23,8 +23,7 @@ form{
     box-shadow: #ff847c;
 }
 .examples{
-    line-height: 2;
-    margin: bottom -2px;
+    line-height:1.5;
     font-size: small;
 }
 .text-form{ 
